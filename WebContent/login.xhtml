@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>LOGİN PAGE</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		<h1>LOGİN SAYFASI</h1>
+		<br />
+		<h:outputLabel value="Kullanıcı Adı" />
+		<br />
+		<h:inputText value="#{loginBean.ad}" />
+		<br />
+		<br />
+		<h:outputLabel value="Kullanıcı Şifre" />
+		<br />
+		<h:inputSecret value="#{loginBean.sifre}" />
+		<br />
+		<br />
+		<h:commandButton action="#{loginBean.giris}" value="Giriş Yap" />
+		<br />
+		<br />
+		<h:outputLabel style="color:red" value="#{loginBean.mesaj}" />
+	</h:form>
+</h:body>
+
+
+</html>
